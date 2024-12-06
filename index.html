@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tucuruquinho</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <form action="..." method="get" id="registration">
+            <h3>Login</h3>
+            <label>
+                Nome:</label><br>
+            <input class="name" type="text" name="nome" value="Duda Linda Meu Amor">
+            <br>
+            <label>
+                Senha:</label>
+            <br>
+            <input class="password" type="password" name="password">
+            <br>
+            <button>Confirmar</button>
+        </form>
+    </div>
+    <script>
+        const senha = document.querySelector(".password")
+        const botao = document.querySelector("button")
+        botao.addEventListener("click", (event) => {
+            event.preventDefault();
+            if (senha.value === "tucuruquinho") {
+                window.location.href = "inicial.html"
+            } else {
+                alert("Senha incorreta")
+            }
+        })
+    </script>
+</body>
+</html>
